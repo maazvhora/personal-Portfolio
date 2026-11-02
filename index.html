@@ -1,0 +1,1007 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="dark">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Maaz Vhora | Assistant Full-Stack Engineer &amp; UI Architect</title>
+  <meta name="description" content="Portfolio of Maaz Vhora - Assistant Full-Stack Engineer, UI/UX Architect, and Modern Web Specialist building high-performance digital experiences.">
+  <meta name="keywords" content="Maaz Vhora, Full Stack Developer, Software Engineer, Web Developer, Portfolio, React, Node.js, JavaScript, Vadodara">
+  <meta name="author" content="Maaz Vhora">
+  <meta name="theme-color" content="#381932">
+  
+  <!-- Open Graph / Meta -->
+  <meta property="og:type" content="website">
+  <meta property="og:title" content="Maaz Vhora | Assistant Full-Stack Engineer &amp; UI Architect">
+  <meta property="og:description" content="Explore cutting-edge web applications, clean architectures, and interactive digital experiences crafted by Maaz Vhora.">
+  
+  <!-- Google Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@300;400;500;600;700;800&family=Space+Grotesk:wght@500;600;700&family=JetBrains+Mono:wght@400;500;600&display=swap" rel="stylesheet">
+  
+  <!-- Main Stylesheet -->
+  <link rel="stylesheet" href="css/style.css">
+
+  <!-- Professional Developer Favicon -->
+  <link rel="icon" type="image/svg+xml" href="favicon.svg">
+  <link rel="alternate icon" type="image/svg+xml" href="favicon.svg">
+</head>
+<body>
+  <!-- Top Scroll Progress Indicator -->
+  <div id="scroll-progress" class="scroll-progress" aria-hidden="true"></div>
+
+  <!-- Ambient Light Mesh Backdrop -->
+  <div class="ambient-glow ambient-glow-1" aria-hidden="true"></div>
+  <div class="ambient-glow ambient-glow-2" aria-hidden="true"></div>
+
+  <!-- Floating Capsule Navigation Bar -->
+  <header class="site-header" id="header">
+    <div class="header-container">
+      <a href="#hero" class="brand-logo" aria-label="Maaz Vhora Homepage">
+        <span class="logo-symbol">&lt;M/&gt;</span>
+        <span class="logo-text">Maaz<span class="accent-text">.dev</span></span>
+      </a>
+
+      <!-- Status Indicator -->
+      <div class="availability-badge" title="Actively considering high-impact software roles">
+        <span class="pulse-indicator"></span>
+        <span class="badge-text">Available for Work</span>
+      </div>
+
+      <!-- Desktop Navigation Links -->
+      <nav class="nav-links" id="nav-links" aria-label="Primary Navigation">
+        <a href="#hero" class="nav-link active">Home</a>
+        <a href="#about" class="nav-link">About</a>
+        <a href="#skills" class="nav-link">Skills</a>
+        <a href="#projects" class="nav-link">Projects</a>
+        <a href="#experience" class="nav-link">Experience</a>
+        <a href="#contact" class="nav-link">Contact</a>
+      </nav>
+
+      <!-- Action Utilities -->
+      <div class="header-actions">
+        <!-- Theme Switcher Button -->
+        <button id="theme-toggle" class="icon-btn theme-toggle" aria-label="Toggle dark/light mode" title="Toggle Theme">
+          <svg class="sun-icon" xmlns="http://www.w3.org/2000/svg" width="19" height="19" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="5"></circle><line x1="12" y1="1" x2="12" y2="3"></line><line x1="12" y1="21" x2="12" y2="23"></line><line x1="4.22" y1="4.22" x2="5.64" y2="5.64"></line><line x1="18.36" y1="18.36" x2="19.78" y2="19.78"></line><line x1="1" y1="12" x2="3" y2="12"></line><line x1="21" y1="12" x2="23" y2="12"></line><line x1="4.22" y1="19.78" x2="5.64" y2="18.36"></line><line x1="18.36" y1="5.64" x2="19.78" y2="4.22"></line></svg>
+          <svg class="moon-icon" xmlns="http://www.w3.org/2000/svg" width="19" height="19" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z"></path></svg>
+        </button>
+
+        <!-- Contact CTA -->
+        <a href="#contact" class="btn btn-outline btn-sm desktop-only">Let's Talk</a>
+
+        <!-- Mobile Menu Toggle Button -->
+        <button id="mobile-toggle" class="icon-btn mobile-toggle" aria-label="Toggle mobile menu" aria-expanded="false">
+          <span class="hamburger-bar"></span>
+          <span class="hamburger-bar"></span>
+          <span class="hamburger-bar"></span>
+        </button>
+      </div>
+    </div>
+  </header>
+
+  <!-- Mobile Navigation Overlay Drawer -->
+  <div id="mobile-nav-drawer" class="mobile-nav-drawer" aria-hidden="true">
+    <div class="mobile-nav-content">
+      <div class="mobile-nav-header">
+        <span class="brand-logo">Maaz<span class="accent-text">.dev</span></span>
+        <button id="mobile-close" class="icon-btn" aria-label="Close menu">&times;</button>
+      </div>
+      <nav class="mobile-links">
+        <a href="#hero" class="mobile-link">Home</a>
+        <a href="#about" class="mobile-link">About</a>
+        <a href="#skills" class="mobile-link">Skills</a>
+        <a href="#projects" class="mobile-link">Projects</a>
+        <a href="#experience" class="mobile-link">Experience</a>
+        <a href="#contact" class="mobile-link">Contact</a>
+      </nav>
+      <div class="mobile-drawer-footer">
+        <a href="#contact" class="btn btn-primary btn-block">Schedule a Call</a>
+      </div>
+    </div>
+  </div>
+
+  <main>
+    <!-- HERO SECTION -->
+    <section id="hero" class="hero-section">
+      <div class="container hero-container">
+        <!-- Hero Text Content -->
+        <div class="hero-content">
+          <div class="hero-badge">
+            <span class="badge-dot"></span>
+            <span>Assistant Full-Stack Engineer &amp; UI Architect</span>
+          </div>
+
+          <h1 class="hero-title">
+            Engineering resilient web applications with 
+            <span class="typewriter-container">
+              <span id="typewriter-text" class="gradient-text"></span>
+              <span class="typewriter-cursor">|</span>
+            </span>
+          </h1>
+
+          <p class="hero-description">
+            Computer Science engineer specializing in modern JavaScript architectures, full-stack systems, and immersive user interfaces that transform complex workflows into effortless experiences.
+          </p>
+
+          <!-- Focused Action Group -->
+          <div class="hero-cta-group">
+            <a href="#projects" class="btn btn-primary btn-lg">
+              <span>Explore Featured Work</span>
+              <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><line x1="5" y1="12" x2="19" y2="12"></line><polyline points="12 5 19 12 12 19"></polyline></svg>
+            </a>
+            <a href="#contact" class="btn btn-outline btn-lg">
+              <span>Get In Touch</span>
+            </a>
+            <a href="assets/resume.pdf" target="_blank" rel="noopener noreferrer" class="btn btn-ghost btn-lg" title="Open Resume PDF in new tab">
+              <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"></path><polyline points="14 2 14 8 20 8"></polyline><line x1="16" y1="13" x2="8" y2="13"></line><line x1="16" y1="17" x2="8" y2="17"></line></svg>
+              <span>Resume PDF</span>
+            </a>
+          </div>
+
+          <!-- Social Proof & Quick Connect Row -->
+          <div class="hero-connect-row">
+            <div class="social-links">
+              <a href="https://github.com/maazvhora/maazvhora" target="_blank" rel="noopener noreferrer" class="social-pill" aria-label="GitHub Profile">
+                <svg width="17" height="17" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M9 19c-5 1.5-5-2.5-7-3m14 6v-3.87a3.37 3.37 0 0 0-.94-2.61c3.14-.35 6.44-1.54 6.44-7A5.44 5.44 0 0 0 20 4.77 5.07 5.07 0 0 0 19.91 1S18.73.65 16 2.48a13.38 13.38 0 0 0-7 0C6.27.65 5.09 1 5.09 1A5.07 5.07 0 0 0 5 4.77a5.44 5.44 0 0 0-1.5 3.78c0 5.42 3.3 6.61 6.44 7A3.37 3.37 0 0 0 9 18.13V22"></path></svg>
+                <span>GitHub</span>
+              </a>
+              <a href="https://www.linkedin.com/in/maaz-vhora-106925353" target="_blank" rel="noopener noreferrer" class="social-pill" aria-label="LinkedIn Profile">
+                <svg width="17" height="17" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-2-2 2 2 0 0 0-2 2v7h-4v-7a6 6 0 0 1 6-6z"></path><rect x="2" y="9" width="4" height="12"></rect><circle cx="4" cy="4" r="2"></circle></svg>
+                <span>LinkedIn</span>
+              </a>
+              <button type="button" class="social-pill copy-email-btn" data-email="vhoramaaz606@gmail.com" aria-label="Copy Email Address">
+                <svg width="17" height="17" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"></path><polyline points="22,6 12,13 2,6"></polyline></svg>
+                <span>Copy Email</span>
+              </button>
+            </div>
+            <div class="hero-location-chip">
+              <span>📍 Vadodara, Gujarat • Open to Relocation &amp; Remote</span>
+            </div>
+          </div>
+        </div>
+
+        <!-- Hero Visual / 3D Interactive Flip Photo Card -->
+        <div class="hero-visual">
+          <div class="photo-glow" aria-hidden="true"></div>
+          <div class="hero-flip-card" id="hero-flip-card" tabindex="0" role="region" aria-label="Maaz Vhora Profile Card - Hover or tap to flip for introduction">
+            <div class="hero-flip-card-inner">
+              <!-- Front Face: Photo with Flip Hint -->
+              <div class="hero-flip-face hero-flip-front">
+                <img src="assets/images/hero-avatar.jpg" alt="Maaz Vhora - Full Stack Software Engineer" class="hero-photo" width="768" height="1024">
+                <div class="photo-flip-hint" aria-hidden="true">
+                  <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><path d="M21 2v6h-6"></path><path d="M3 12a9 9 0 0 1 15-6.7L21 8"></path><path d="M3 22v-6h6"></path><path d="M21 12a9 9 0 0 1-15 6.7L3 16"></path></svg>
+                  <span>Hover to Flip</span>
+                </div>
+              </div>
+
+              <!-- Back Face: Welcome & Short Intro -->
+              <div class="hero-flip-face hero-flip-back">
+                <div class="flip-back-inner">
+                  <div class="welcome-badge">
+                    <span class="welcome-wave" aria-hidden="true">👋</span>
+                    <span>Welcome to my portfolio!</span>
+                  </div>
+
+                  <div class="flip-back-header">
+                    <h3 class="flip-back-name">I'm Maaz Vhora</h3>
+                    <p class="flip-back-role">Full-Stack Engineer &amp; UI Architect</p>
+                  </div>
+
+                  <p class="flip-back-bio">
+                    Passionate Computer Science engineer crafting resilient web architectures, scalable backend systems, and delightful interactive user experiences.
+                  </p>
+
+                  <div class="flip-back-actions">
+                    <a href="#contact" class="btn btn-sm btn-primary">
+                      <span>Let's Connect</span>
+                      <svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M5 12h14M12 5l7 7-7 7"/></svg>
+                    </a>
+                    <a href="#projects" class="btn btn-sm btn-outline">
+                      <span>View Work</span>
+                    </a>
+                  </div>
+
+                  <div class="flip-back-hint" aria-hidden="true">
+                    <svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M3 12a9 9 0 1 0 9-9 9.75 9.75 0 0 0-6.74 2.74L3 8"></path><path d="M3 3v5h5"></path></svg>
+                    <span>Move cursor away to flip back</span>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- 2-Card KPI Strip -->
+      <div class="container">
+        <div class="metrics-grid">
+          <div class="metric-card">
+            <div class="metric-number-wrap">
+              <span class="counter" data-target="1">0</span><span class="plus">+</span>
+            </div>
+            <div class="metric-label">Year of Engineering</div>
+            <div class="metric-sub">Hands-on Web Systems &amp; APIs</div>
+          </div>
+          <div class="metric-card">
+            <div class="metric-number-wrap">
+              <span class="counter" data-target="3">0</span><span class="plus">+</span>
+            </div>
+            <div class="metric-label">Projects Shipped</div>
+            <div class="metric-sub">Clones, Portals &amp; Live Tools</div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ABOUT SECTION -->
+    <section id="about" class="section about-section">
+      <div class="container">
+        <div class="section-header text-center">
+          <div class="section-tag">Engineering Mindset</div>
+          <h2 class="section-title">Driven by Engineering Excellence &amp; Great Design</h2>
+          <p class="section-subtitle">Bridging the gap between robust backend systems and delightful, human-centric user interfaces.</p>
+        </div>
+
+        <div class="about-grid">
+          <!-- Story Narrative Card -->
+          <div class="about-narrative card-glass">
+            <div class="narrative-quote-callout">
+              <span class="quote-mark">“</span>
+              <p class="quote-text">Code should be as clean and readable as literature, and as reliable as clockwork.</p>
+            </div>
+            <p>
+              I'm Maaz Vhora, a Computer Science student at ITM (sls) Baroda University with a passion for architecting resilient, high-speed, and maintainable software. I specialize in designing scalable frontend architectures, performant RESTful APIs, and smooth interactive web experiences.
+            </p>
+            <p>
+              Whether it's optimizing critical render paths for instant page loads, architecting full-stack MERN workflows, or crafting buttery smooth micro-animations, I believe that great software must be both bulletproof under the hood and an absolute joy to use.
+            </p>
+
+            <div class="about-highlights">
+              <div class="highlight-item">
+                <div class="highlight-icon">🎯</div>
+                <div>
+                  <strong>Outcome Oriented</strong>
+                  <p>Focused on shipping measurable impact, reliability, and high developer velocity.</p>
+                </div>
+              </div>
+              <div class="highlight-item">
+                <div class="highlight-icon">⚡</div>
+                <div>
+                  <strong>Speed &amp; Performance First</strong>
+                  <p>Zero tolerance for bloated bundles, memory leaks, or sluggish database queries.</p>
+                </div>
+              </div>
+              <div class="highlight-item">
+                <div class="highlight-icon">🧩</div>
+                <div>
+                  <strong>Modular Architecture</strong>
+                  <p>Writing clean, testable, well-documented code that scales with team growth.</p>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- Interactive CLI Terminal Widget -->
+          <div id="terminal-section" class="terminal-card card-glass">
+            <div class="terminal-bar">
+              <div class="terminal-dots">
+                <span class="dot red"></span>
+                <span class="dot yellow"></span>
+                <span class="dot green"></span>
+              </div>
+              <div class="terminal-title">maaz@developer-workspace ~ zsh</div>
+              <div class="terminal-controls">
+                <button id="terminal-clear" class="terminal-btn" title="Clear console">clear</button>
+              </div>
+            </div>
+            <div class="terminal-body" id="terminal-output">
+              <div class="terminal-line"><span class="t-prompt">maaz@dev:~$</span> <span class="t-cmd">whoami</span></div>
+              <div class="terminal-line t-response">Maaz Vhora | Assistant Full-Stack Engineer &amp; UI Architect</div>
+              <div class="terminal-line"><span class="t-prompt">maaz@dev:~$</span> <span class="t-cmd">cat profile.json</span></div>
+              <div class="terminal-line t-response t-json">{
+  "name": "Maaz Vhora",
+  "role": "Assistant Full-Stack Engineer",
+  "education": "B.Tech CSE @ ITM (sls) Baroda University",
+  "location": "Vadodara, Gujarat, India",
+  "status": "Available for High-Impact Roles & Projects",
+  "passions": ["Clean Code", "Web Physics", "Creative UI", "MERN Stack"]
+}</div>
+              <div class="terminal-line"><span class="t-prompt">maaz@dev:~$</span> <span class="t-cmd">help</span></div>
+              <div class="terminal-line t-response">Available commands: <span class="t-highlight">about</span>, <span class="t-highlight">skills</span>, <span class="t-highlight">projects</span>, <span class="t-highlight">contact</span>, <span class="t-highlight">clear</span></div>
+            </div>
+            <div class="terminal-input-bar">
+              <span class="t-prompt">maaz@dev:~$</span>
+              <input type="text" id="terminal-input" class="terminal-input" placeholder="Type 'skills' or 'help' and press Enter..." autocomplete="off" spellcheck="false">
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- SKILLS SECTION -->
+    <section id="skills" class="section skills-section">
+      <div class="container">
+        <div class="section-header text-center">
+          <div class="section-tag">Technical Arsenal</div>
+          <h2 class="section-title">Tools &amp; Technologies I Master</h2>
+          <p class="section-subtitle">Continuously refined toolkit for modern, scalable, and resilient software delivery.</p>
+        </div>
+
+        <!-- Filter Tabs -->
+        <div class="skills-filter-tabs" role="tablist">
+          <button class="filter-tab active" data-filter="all" role="tab">All Disciplines</button>
+          <button class="filter-tab" data-filter="frontend" role="tab">Frontend &amp; UI</button>
+          <button class="filter-tab" data-filter="backend" role="tab">Backend &amp; Database</button>
+          <button class="filter-tab" data-filter="tools" role="tab">Dev Tools &amp; Cloud</button>
+        </div>
+
+        <!-- Skills Grid (Capability Cards) -->
+        <div class="skills-grid" id="skills-grid">
+          <!-- Skill: HTML5 -->
+          <div class="skill-card card-glass" data-category="frontend">
+            <div class="skill-header-row">
+              <div class="skill-icon-wrap">
+                <span class="code-badge">H5</span>
+              </div>
+              <span class="skill-tag-pill">Core Standard</span>
+            </div>
+            <div class="skill-info">
+              <div class="skill-name-row">
+                <h4 class="skill-name">HTML5 &amp; Semantic Web</h4>
+                <span class="skill-level">Expert</span>
+              </div>
+              <p class="skill-desc">Accessible DOM architecture, semantic HTML5 tags, Web Storage, and Canvas APIs.</p>
+              <div class="skill-tags-list">
+                <span class="skill-micro-tag">Semantics</span>
+                <span class="skill-micro-tag">Accessibility</span>
+                <span class="skill-micro-tag">SEO</span>
+              </div>
+            </div>
+          </div>
+
+          <!-- Skill: CSS3 -->
+          <div class="skill-card card-glass" data-category="frontend">
+            <div class="skill-header-row">
+              <div class="skill-icon-wrap">
+                <span class="code-badge">CSS</span>
+              </div>
+              <span class="skill-tag-pill">UI Architecture</span>
+            </div>
+            <div class="skill-info">
+              <div class="skill-name-row">
+                <h4 class="skill-name">CSS3 &amp; Modern Styling</h4>
+                <span class="skill-level">Advanced</span>
+              </div>
+              <p class="skill-desc">CSS Grid, Flexbox, glassmorphic design systems, CSS variables, and GPU-accelerated micro-animations.</p>
+              <div class="skill-tags-list">
+                <span class="skill-micro-tag">CSS Grid</span>
+                <span class="skill-micro-tag">Glassmorphism</span>
+                <span class="skill-micro-tag">Keyframes</span>
+              </div>
+            </div>
+          </div>
+
+          <!-- Skill: Tailwind CSS -->
+          <div class="skill-card card-glass" data-category="frontend">
+            <div class="skill-header-row">
+              <div class="skill-icon-wrap">
+                <svg viewBox="0 0 24 24" class="skill-svg" fill="none" stroke="currentColor" stroke-width="2"><path d="M12 6c-2.67 0-4.33 1.33-5 4 1-1.33 2.33-1.67 4-1 1 0.42 1.71 1.46 2.5 2.59C14.79 13.43 16.38 15 20 15c2.67 0 4.33-1.33 5-4-1 1.33-2.33 1.67-4 1-1-0.42-1.71-1.46-2.5-2.59C17.21 7.57 15.62 6 12 6zM4 14c-2.67 0-4.33 1.33-5 4 1-1.33 2.33-1.67 4-1 1 0.42 1.71 1.46 2.5 2.59C6.79 21.43 8.38 23 12 23c2.67 0 4.33-1.33 5-4-1 1.33-2.33 1.67-4 1-1-0.42-1.71-1.46-2.5-2.59C8.21 15.57 6.62 14 4 14z"/></svg>
+              </div>
+              <span class="skill-tag-pill">Utility-First</span>
+            </div>
+            <div class="skill-info">
+              <div class="skill-name-row">
+                <h4 class="skill-name">Tailwind CSS</h4>
+                <span class="skill-level">Production</span>
+              </div>
+              <p class="skill-desc">Rapid interface composition, fluid responsive utilities, custom theme extensions, and dark mode.</p>
+              <div class="skill-tags-list">
+                <span class="skill-micro-tag">JIT Engine</span>
+                <span class="skill-micro-tag">Dark Mode</span>
+                <span class="skill-micro-tag">Custom Tokens</span>
+              </div>
+            </div>
+          </div>
+
+          <!-- Skill: JavaScript -->
+          <div class="skill-card card-glass" data-category="frontend">
+            <div class="skill-header-row">
+              <div class="skill-icon-wrap">
+                <span class="code-badge">JS</span>
+              </div>
+              <span class="skill-tag-pill">Core Engine</span>
+            </div>
+            <div class="skill-info">
+              <div class="skill-name-row">
+                <h4 class="skill-name">JavaScript (ES6+)</h4>
+                <span class="skill-level">Advanced</span>
+              </div>
+              <p class="skill-desc">Asynchronous event loops, Promises/Async-Await, DOM APIs, Canvas simulations, and modular code architecture.</p>
+              <div class="skill-tags-list">
+                <span class="skill-micro-tag">ES6+ Modules</span>
+                <span class="skill-micro-tag">Fetch API</span>
+                <span class="skill-micro-tag">Canvas 2D</span>
+              </div>
+            </div>
+          </div>
+
+          <!-- Skill: React.js -->
+          <div class="skill-card card-glass" data-category="frontend">
+            <div class="skill-header-row">
+              <div class="skill-icon-wrap">
+                <svg viewBox="0 0 24 24" class="skill-svg" fill="none" stroke="currentColor" stroke-width="1.8"><ellipse cx="12" cy="12" rx="10" ry="4" transform="rotate(30 12 12)"></ellipse><ellipse cx="12" cy="12" rx="10" ry="4" transform="rotate(90 12 12)"></ellipse><ellipse cx="12" cy="12" rx="10" ry="4" transform="rotate(150 12 12)"></ellipse><circle cx="12" cy="12" r="1.5" fill="currentColor"></circle></svg>
+              </div>
+              <span class="skill-tag-pill">Framework</span>
+            </div>
+            <div class="skill-info">
+              <div class="skill-name-row">
+                <h4 class="skill-name">React Ecosystem</h4>
+                <span class="skill-level">Proficient</span>
+              </div>
+              <p class="skill-desc">Declarative component trees, custom hooks, reactive state management, and reusable UI library development.</p>
+              <div class="skill-tags-list">
+                <span class="skill-micro-tag">Hooks</span>
+                <span class="skill-micro-tag">Virtual DOM</span>
+                <span class="skill-micro-tag">Component UI</span>
+              </div>
+            </div>
+          </div>
+
+          <!-- Skill: Node.js & Express -->
+          <div class="skill-card card-glass" data-category="backend">
+            <div class="skill-header-row">
+              <div class="skill-icon-wrap">
+                <svg viewBox="0 0 24 24" class="skill-svg" fill="none" stroke="currentColor" stroke-width="1.8"><path d="M12 2L2 7l10 5 10-5-10-5z"></path><path d="M2 17l10 5 10-5"></path><path d="M2 12l10 5 10-5"></path></svg>
+              </div>
+              <span class="skill-tag-pill">Server Runtime</span>
+            </div>
+            <div class="skill-info">
+              <div class="skill-name-row">
+                <h4 class="skill-name">Node.js &amp; Express</h4>
+                <span class="skill-level">Backend</span>
+              </div>
+              <p class="skill-desc">Server-side runtime, Express.js RESTful endpoints, middleware chains, authentication, and routing.</p>
+              <div class="skill-tags-list">
+                <span class="skill-micro-tag">REST APIs</span>
+                <span class="skill-micro-tag">Middleware</span>
+                <span class="skill-micro-tag">npm Packages</span>
+              </div>
+            </div>
+          </div>
+
+          <!-- Skill: MongoDB -->
+          <div class="skill-card card-glass" data-category="backend">
+            <div class="skill-header-row">
+              <div class="skill-icon-wrap">
+                <svg viewBox="0 0 24 24" class="skill-svg" fill="none" stroke="currentColor" stroke-width="1.8"><path d="M12 2c0 0-6 6.5-6 12.5C6 18.5 8.7 22 12 22s6-3.5 6-7.5C18 8.5 12 2 12 2z"></path><path d="M12 2v20"></path></svg>
+              </div>
+              <span class="skill-tag-pill">Database</span>
+            </div>
+            <div class="skill-info">
+              <div class="skill-name-row">
+                <h4 class="skill-name">MongoDB &amp; Mongoose</h4>
+                <span class="skill-level">NoSQL</span>
+              </div>
+              <p class="skill-desc">Schema modeling, high-efficiency CRUD operations, aggregation pipelines, and document validation.</p>
+              <div class="skill-tags-list">
+                <span class="skill-micro-tag">Mongoose ODM</span>
+                <span class="skill-micro-tag">Indexing</span>
+                <span class="skill-micro-tag">Aggregation</span>
+              </div>
+            </div>
+          </div>
+
+          <!-- Skill: Git & GitHub -->
+          <div class="skill-card card-glass" data-category="tools">
+            <div class="skill-header-row">
+              <div class="skill-icon-wrap">
+                <svg viewBox="0 0 24 24" class="skill-svg" fill="none" stroke="currentColor" stroke-width="2"><circle cx="18" cy="18" r="3"></circle><circle cx="6" cy="6" r="3"></circle><circle cx="6" cy="18" r="3"></circle><path d="M18 15V9a9 9 0 0 0-9-9H6"></path><line x1="6" y1="9" x2="6" y2="15"></line></svg>
+              </div>
+              <span class="skill-tag-pill">Version Control</span>
+            </div>
+            <div class="skill-info">
+              <div class="skill-name-row">
+                <h4 class="skill-name">Git &amp; GitHub Workflows</h4>
+                <span class="skill-level">Workflow</span>
+              </div>
+              <p class="skill-desc">Feature-branch workflows, collaborative code reviews, pull requests, semantic commit conventions, and Vercel CI/CD.</p>
+              <div class="skill-tags-list">
+                <span class="skill-micro-tag">Branching</span>
+                <span class="skill-micro-tag">CI/CD Deploy</span>
+                <span class="skill-micro-tag">Code Reviews</span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- PROJECTS SECTION -->
+    <section id="projects" class="section projects-section">
+      <div class="container">
+        <div class="section-header text-center">
+          <div class="section-tag">Featured Works</div>
+          <h2 class="section-title">Projects Built with Passion &amp; Precision</h2>
+          <p class="section-subtitle">A curated collection of production web applications, interactive physics canvases, and digital portals.</p>
+        </div>
+
+        <!-- Project Filter Controls -->
+        <div class="projects-filter-bar">
+          <button class="project-filter-btn active" data-filter="all">All Projects</button>
+          <button class="project-filter-btn" data-filter="frontend">Frontend &amp; UI Clones</button>
+          <button class="project-filter-btn" data-filter="web">Web Portals &amp; Agency</button>
+          <button class="project-filter-btn" data-filter="tools">JavaScript Tools</button>
+        </div>
+
+        <!-- Projects Grid (Cinematic Showcase) -->
+        <div class="projects-grid" id="projects-grid">
+          <!-- Project 1: Apple Official Clone -->
+          <article class="project-card card-glass" data-category="frontend" data-project-id="p1">
+            <div class="browser-mockup-bar">
+              <div class="browser-dots">
+                <span class="dot red"></span>
+                <span class="dot yellow"></span>
+                <span class="dot green"></span>
+              </div>
+              <div class="browser-url-pill">apple-store.maaz.dev</div>
+              <span class="browser-badge">Live Store</span>
+            </div>
+            <div class="project-image-box">
+              <img src="assets/images/project-apple.jpg" alt="Apple Official Store & Products Clone" class="project-img" loading="lazy">
+              <div class="project-overlay">
+                <button class="btn btn-sm btn-secondary view-project-btn" data-project="p1">Quick View</button>
+                <a href="https://apple-clone-weld-zeta.vercel.app" target="_blank" rel="noopener noreferrer" class="btn btn-sm btn-live-demo">
+                  <span class="live-dot"></span>
+                  <span>Live Demo</span>
+                </a>
+              </div>
+            </div>
+            <div class="project-body">
+              <div class="project-meta">
+                <span class="project-category-badge">Frontend &amp; UI Clone</span>
+                <span class="project-year">2024</span>
+              </div>
+              <h3 class="project-title">Apple Official Store &amp; Products Clone</h3>
+              <p class="project-snippet">
+                Pixel-perfect, high-fidelity Apple Store web experience featuring sleek product showcases, smooth transitions, responsive navigation, and Apple's signature aesthetic.
+              </p>
+              <div class="project-footer">
+                <button class="project-link-action view-project-btn" data-project="p1">
+                  <span>Explore Details</span>
+                  <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M5 12h14M12 5l7 7-7 7"/></svg>
+                </button>
+                <div class="project-links-icons">
+                  <a href="https://apple-clone-weld-zeta.vercel.app" target="_blank" rel="noopener noreferrer" title="Live Preview" aria-label="Live Demo">
+                    <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"></path><polyline points="15 3 21 3 21 9"></polyline><line x1="10" y1="14" x2="21" y2="3"></line></svg>
+                  </a>
+                  <a href="https://github.com/maazvhora/appleClone" target="_blank" rel="noopener noreferrer" title="View Source on GitHub" aria-label="GitHub Source">
+                    <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M9 19c-5 1.5-5-2.5-7-3m14 6v-3.87a3.37 3.37 0 0 0-.94-2.61c3.14-.35 6.44-1.54 6.44-7A5.44 5.44 0 0 0 20 4.77 5.07 5.07 0 0 0 19.91 1S18.73.65 16 2.48a13.38 13.38 0 0 0-7 0C6.27.65 5.09 1 5.09 1A5.07 5.07 0 0 0 5 4.77a5.44 5.44 0 0 0-1.5 3.78c0 5.42 3.3 6.61 6.44 7A3.37 3.37 0 0 0 9 18.13V22"></path></svg>
+                  </a>
+                </div>
+              </div>
+            </div>
+          </article>
+
+          <!-- Project 2: Spider-Man Interactive Portfolio -->
+          <article class="project-card card-glass" data-category="frontend" data-project-id="p2">
+            <div class="browser-mockup-bar">
+              <div class="browser-dots">
+                <span class="dot red"></span>
+                <span class="dot yellow"></span>
+                <span class="dot green"></span>
+              </div>
+              <div class="browser-url-pill">spiderman-canvas.maaz.dev</div>
+              <span class="browser-badge">Interactive</span>
+            </div>
+            <div class="project-image-box">
+              <img src="assets/images/project-spiderman.jpg" alt="Spider-Man Themed Interactive Portfolio" class="project-img" loading="lazy">
+              <div class="project-overlay">
+                <button class="btn btn-sm btn-secondary view-project-btn" data-project="p2">Quick View</button>
+                <a href="https://spider-man-portfolio-rww2.vercel.app" target="_blank" rel="noopener noreferrer" class="btn btn-sm btn-live-demo">
+                  <span class="live-dot"></span>
+                  <span>Live Demo</span>
+                </a>
+              </div>
+            </div>
+            <div class="project-body">
+              <div class="project-meta">
+                <span class="project-category-badge">Creative UI &amp; Physics</span>
+                <span class="project-year">2024</span>
+              </div>
+              <h3 class="project-title">Spider-Man Interactive Web Experience</h3>
+              <p class="project-snippet">
+                Interactive superhero web experience featuring real-time Spider-Man web physics, soundless particle silk canvas, Miles Morales &amp; Peter Parker dual-hue accents.
+              </p>
+              <div class="project-footer">
+                <button class="project-link-action view-project-btn" data-project="p2">
+                  <span>Explore Details</span>
+                  <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M5 12h14M12 5l7 7-7 7"/></svg>
+                </button>
+                <div class="project-links-icons">
+                  <a href="https://spider-man-portfolio-rww2.vercel.app" target="_blank" rel="noopener noreferrer" title="Live Preview" aria-label="Live Demo">
+                    <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"></path><polyline points="15 3 21 3 21 9"></polyline><line x1="10" y1="14" x2="21" y2="3"></line></svg>
+                  </a>
+                  <a href="https://github.com/maazvhora/spider-man-portfolio" target="_blank" rel="noopener noreferrer" title="View Source on GitHub" aria-label="GitHub Source">
+                    <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M9 19c-5 1.5-5-2.5-7-3m14 6v-3.87a3.37 3.37 0 0 0-.94-2.61c3.14-.35 6.44-1.54 6.44-7A5.44 5.44 0 0 0 20 4.77 5.07 5.07 0 0 0 19.91 1S18.73.65 16 2.48a13.38 13.38 0 0 0-7 0C6.27.65 5.09 1 5.09 1A5.07 5.07 0 0 0 5 4.77a5.44 5.44 0 0 0-1.5 3.78c0 5.42 3.3 6.61 6.44 7A3.37 3.37 0 0 0 9 18.13V22"></path></svg>
+                  </a>
+                </div>
+              </div>
+            </div>
+          </article>
+
+          <!-- Project 3: Mamo TechnoLabs Agency Portal -->
+          <article class="project-card card-glass" data-category="web" data-project-id="p3">
+            <div class="browser-mockup-bar">
+              <div class="browser-dots">
+                <span class="dot red"></span>
+                <span class="dot yellow"></span>
+                <span class="dot green"></span>
+              </div>
+              <div class="browser-url-pill">mamotechnolabs.agency</div>
+              <span class="browser-badge">Agency</span>
+            </div>
+            <div class="project-image-box">
+              <img src="assets/images/project-mamotechno.jpg" alt="Mamo TechnoLabs IT Solutions Platform" class="project-img" loading="lazy">
+              <div class="project-overlay">
+                <button class="btn btn-sm btn-secondary view-project-btn" data-project="p3">Quick View</button>
+                <a href="https://github.com/maazvhora/mamotechnolabs" target="_blank" rel="noopener noreferrer" class="btn btn-sm btn-github">
+                  <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M9 19c-5 1.5-5-2.5-7-3m14 6v-3.87a3.37 3.37 0 0 0-.94-2.61c3.14-.35 6.44-1.54 6.44-7A5.44 5.44 0 0 0 20 4.77 5.07 5.07 0 0 0 19.91 1S18.73.65 16 2.48a13.38 13.38 0 0 0-7 0C6.27.65 5.09 1 5.09 1A5.07 5.07 0 0 0 5 4.77a5.44 5.44 0 0 0-1.5 3.78c0 5.42 3.3 6.61 6.44 7A3.37 3.37 0 0 0 9 18.13V22"></path></svg>
+                  <span>GitHub</span>
+                </a>
+              </div>
+            </div>
+            <div class="project-body">
+              <div class="project-meta">
+                <span class="project-category-badge">Enterprise &amp; Agency Web</span>
+                <span class="project-year">2024</span>
+              </div>
+              <h3 class="project-title">Mamo TechnoLabs Digital Agency Portal</h3>
+              <p class="project-snippet">
+                Corporate agency showcase platform featuring modern IT solutions, service capability showcases, client presentation decks, and responsive lead conversion funnel.
+              </p>
+              <div class="project-footer">
+                <button class="project-link-action view-project-btn" data-project="p3">
+                  <span>Explore Details</span>
+                  <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M5 12h14M12 5l7 7-7 7"/></svg>
+                </button>
+                <div class="project-links-icons">
+                  <a href="https://github.com/maazvhora/mamotechnolabs" target="_blank" rel="noopener noreferrer" title="View Source on GitHub" aria-label="GitHub Source">
+                    <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M9 19c-5 1.5-5-2.5-7-3m14 6v-3.87a3.37 3.37 0 0 0-.94-2.61c3.14-.35 6.44-1.54 6.44-7A5.44 5.44 0 0 0 20 4.77 5.07 5.07 0 0 0 19.91 1S18.73.65 16 2.48a13.38 13.38 0 0 0-7 0C6.27.65 5.09 1 5.09 1A5.07 5.07 0 0 0 5 4.77a5.44 5.44 0 0 0-1.5 3.78c0 5.42 3.3 6.61 6.44 7A3.37 3.37 0 0 0 9 18.13V22"></path></svg>
+                  </a>
+                </div>
+              </div>
+            </div>
+          </article>
+
+          <!-- Project 4: Textify Utility -->
+          <article class="project-card card-glass" data-category="tools" data-project-id="p4">
+            <div class="browser-mockup-bar">
+              <div class="browser-dots">
+                <span class="dot red"></span>
+                <span class="dot yellow"></span>
+                <span class="dot green"></span>
+              </div>
+              <div class="browser-url-pill">textify.tools.dev</div>
+              <span class="browser-badge">Utility</span>
+            </div>
+            <div class="project-image-box">
+              <img src="assets/images/project-textify.jpg" alt="Textify Live Text Processing Tool" class="project-img" loading="lazy">
+              <div class="project-overlay">
+                <button class="btn btn-sm btn-secondary view-project-btn" data-project="p4">Quick View</button>
+                <a href="https://github.com/maazvhora/Text" target="_blank" rel="noopener noreferrer" class="btn btn-sm btn-github">
+                  <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M9 19c-5 1.5-5-2.5-7-3m14 6v-3.87a3.37 3.37 0 0 0-.94-2.61c3.14-.35 6.44-1.54 6.44-7A5.44 5.44 0 0 0 20 4.77 5.07 5.07 0 0 0 19.91 1S18.73.65 16 2.48a13.38 13.38 0 0 0-7 0C6.27.65 5.09 1 5.09 1A5.07 5.07 0 0 0 5 4.77a5.44 5.44 0 0 0-1.5 3.78c0 5.42 3.3 6.61 6.44 7A3.37 3.37 0 0 0 9 18.13V22"></path></svg>
+                  <span>GitHub</span>
+                </a>
+              </div>
+            </div>
+            <div class="project-body">
+              <div class="project-meta">
+                <span class="project-category-badge">JavaScript Utility</span>
+                <span class="project-year">2024</span>
+              </div>
+              <h3 class="project-title">Textify Live Text Processing Tool</h3>
+              <p class="project-snippet">
+                Fast, client-side text manipulation tool for real-time word/character counts, case conversions, whitespace cleaning, formatting, and live previews.
+              </p>
+              <div class="project-footer">
+                <button class="project-link-action view-project-btn" data-project="p4">
+                  <span>Explore Details</span>
+                  <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M5 12h14M12 5l7 7-7 7"/></svg>
+                </button>
+                <div class="project-links-icons">
+                  <a href="https://github.com/maazvhora/Text" target="_blank" rel="noopener noreferrer" title="View Source on GitHub" aria-label="GitHub Source">
+                    <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M9 19c-5 1.5-5-2.5-7-3m14 6v-3.87a3.37 3.37 0 0 0-.94-2.61c3.14-.35 6.44-1.54 6.44-7A5.44 5.44 0 0 0 20 4.77 5.07 5.07 0 0 0 19.91 1S18.73.65 16 2.48a13.38 13.38 0 0 0-7 0C6.27.65 5.09 1 5.09 1A5.07 5.07 0 0 0 5 4.77a5.44 5.44 0 0 0-1.5 3.78c0 5.42 3.3 6.61 6.44 7A3.37 3.37 0 0 0 9 18.13V22"></path></svg>
+                  </a>
+                </div>
+              </div>
+            </div>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- EXPERIENCE & TIMELINE -->
+    <section id="experience" class="section experience-section">
+      <div class="container">
+        <div class="section-header text-center">
+          <div class="section-tag">Career Milestones</div>
+          <h2 class="section-title">Academic Background &amp; Professional Journey</h2>
+          <p class="section-subtitle">Track record of technical foundations, university education, and active pursuit of high-impact opportunities.</p>
+        </div>
+
+        <div class="timeline-container">
+          <!-- Timeline Item 1: University -->
+          <div class="timeline-item">
+            <div class="timeline-dot"></div>
+            <div class="timeline-card card-glass">
+              <div class="timeline-meta">
+                <span class="timeline-period">2024 - 2027</span>
+                <span class="timeline-badge">Undergraduate Degree</span>
+              </div>
+              <h3 class="timeline-role">Bachelor of Computer Science &amp; Engineering (CSE)</h3>
+              <h4 class="timeline-company">ITM (SLS) Baroda University, Vadodara</h4>
+              <p class="timeline-desc">
+                Pursuing Bachelor of Computer Science &amp; Engineering. Focusing on software development, data structures, algorithms, modern web development, and algorithmic problem-solving.
+              </p>
+              <ul class="timeline-achievements">
+                <li>Hands-on programming in JavaScript, HTML5, CSS3, React, and Node.js</li>
+                <li>Architecting responsive full-stack web applications and database integrations</li>
+              </ul>
+            </div>
+          </div>
+
+          <!-- Timeline Item 2: HSC Schooling -->
+          <div class="timeline-item">
+            <div class="timeline-dot"></div>
+            <div class="timeline-card card-glass">
+              <div class="timeline-meta">
+                <span class="timeline-period">2021 - 2023</span>
+                <span class="timeline-badge">Higher Secondary</span>
+              </div>
+              <h3 class="timeline-role">Higher Secondary Certificate (H.S.C)</h3>
+              <h4 class="timeline-company">Sardar Vinay Mandir</h4>
+              <p class="timeline-desc">
+                Completed Higher Secondary education with honors in SVM. Developed rigorous foundations in logical reasoning, mathematics, analytical thinking, and computing principles.
+              </p>
+            </div>
+          </div>
+
+          <!-- Timeline Item 3: Career Objective -->
+          <div class="timeline-item">
+            <div class="timeline-dot"></div>
+            <div class="timeline-card card-glass">
+              <div class="timeline-meta">
+                <span class="timeline-period">Present</span>
+                <span class="timeline-badge">Active Focus</span>
+              </div>
+              <h3 class="timeline-role">Aspiring Software Engineer &amp; Full-Stack Builder</h3>
+              <h4 class="timeline-company">Seeking Opportunities, Full-Time Roles &amp; Internships</h4>
+              <p class="timeline-desc">
+                Eager to apply academic foundations and modern web engineering skills to contribute effectively to innovative software development teams.
+              </p>
+            </div>
+          </div>
+        </div>
+
+        <!-- Dedicated Resume Action Banner -->
+        <div class="resume-executive-card card-glass">
+          <div class="resume-card-text">
+            <div class="section-tag" style="margin-bottom: 0.4rem;">Curriculum Vitae</div>
+            <h3 class="resume-card-title">Need My Complete Professional Resume?</h3>
+            <p class="resume-card-desc">Review verified credentials, academic qualifications, and technical competencies in PDF format.</p>
+          </div>
+          <div class="resume-card-actions">
+            <a href="assets/resume.pdf" target="_blank" rel="noopener noreferrer" class="btn btn-outline">
+              <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M1 12s4-8 11-8 11 8 11 8-4 8-11 8-11-8-11-8z"></path><circle cx="12" cy="12" r="3"></circle></svg>
+              <span>View Resume</span>
+            </a>
+            <a href="assets/Maaz_Vhora_Resume.pdf" download="Maaz_Vhora_Resume.pdf" class="btn btn-primary">
+              <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4"></path><polyline points="7 10 12 15 17 10"></polyline><line x1="12" y1="15" x2="12" y2="3"></line></svg>
+              <span>Download CV</span>
+            </a>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- CONTACT SECTION -->
+    <section id="contact" class="section contact-section">
+      <div class="container">
+        <div class="section-header text-center">
+          <div class="section-tag">Direct Communication</div>
+          <h2 class="section-title">Ready to Bring Your Vision to Life?</h2>
+          <p class="section-subtitle">Have an opening, a software project in mind, or want to discuss web architectures? Send me a message!</p>
+        </div>
+
+        <div class="contact-grid">
+          <!-- Contact Channels Info -->
+          <div class="contact-info-panel card-glass">
+            <h3 class="panel-heading">Direct Channels</h3>
+            <p class="panel-desc">
+              I am typically responsive within 24 hours. Feel free to copy my direct contact details or reach out via phone, email, or social profiles.
+            </p>
+
+            <div class="channel-cards">
+              <div class="channel-card copy-email-btn" data-email="vhoramaaz606@gmail.com" role="button" tabindex="0" title="Click to copy email">
+                <div class="channel-icon">
+                  <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"></path><polyline points="22,6 12,13 2,6"></polyline></svg>
+                </div>
+                <div class="channel-details">
+                  <span class="channel-type">Email Address</span>
+                  <span class="channel-value">vhoramaaz606@gmail.com</span>
+                </div>
+                <span class="copy-action-indicator" title="Copy to clipboard">📋</span>
+              </div>
+
+              <a href="tel:+917041493457" class="channel-card" title="Call directly">
+                <div class="channel-icon">
+                  <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"></path></svg>
+                </div>
+                <div class="channel-details">
+                  <span class="channel-type">Phone Number</span>
+                  <span class="channel-value">+91 7041493457</span>
+                </div>
+                <span class="copy-action-indicator" title="Call">📞</span>
+              </a>
+
+              <div class="channel-card">
+                <div class="channel-icon">
+                  <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"></path><circle cx="12" cy="10" r="3"></circle></svg>
+                </div>
+                <div class="channel-details">
+                  <span class="channel-type">Location &amp; Address</span>
+                  <span class="channel-value">Vadodara, Gujarat - 390006</span>
+                </div>
+              </div>
+
+              <div class="channel-card">
+                <div class="channel-icon">
+                  <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="10"></circle><polyline points="12 6 12 12 16 14"></polyline></svg>
+                </div>
+                <div class="channel-details">
+                  <span class="channel-type">Local Time (Vadodara IST)</span>
+                  <span class="channel-value" id="live-clock">Loading local time...</span>
+                </div>
+              </div>
+            </div>
+
+            <!-- Coffee / Quick status callout -->
+            <div class="status-callout">
+              <span class="status-dot"></span>
+              <span>Available for Full-Time Roles, Internships &amp; Freelance Contracts</span>
+            </div>
+          </div>
+
+          <!-- Contact Interactive Form -->
+          <div class="contact-form-panel card-glass">
+            <form id="contact-form" class="contact-form" action="https://formsubmit.co/vhoramaaz606@gmail.com" method="POST" novalidate>
+              <!-- FormSubmit Email Delivery Configuration -->
+              <input type="hidden" name="_subject" value="New Portfolio Inquiry - Maaz Vhora">
+              <input type="hidden" name="_template" value="table">
+              <input type="hidden" name="_captcha" value="false">
+
+              <div class="form-row">
+                <div class="form-group">
+                  <label for="form-name">Your Name <span class="required">*</span></label>
+                  <input type="text" id="form-name" name="name" placeholder="John Doe" required autocomplete="name">
+                  <span class="field-error" id="name-error"></span>
+                </div>
+                <div class="form-group">
+                  <label for="form-email">Email Address <span class="required">*</span></label>
+                  <input type="email" id="form-email" name="email" placeholder="john@example.com" required autocomplete="email">
+                  <span class="field-error" id="email-error"></span>
+                </div>
+              </div>
+
+              <div class="form-row">
+                <div class="form-group">
+                  <label for="form-project-type">Project / Inquiry Type</label>
+                  <select id="form-project-type" name="projectType">
+                    <option value="Full-Stack Web App">Full-Stack Web App</option>
+                    <option value="Frontend Development">Frontend Development</option>
+                    <option value="Backend / Node.js API">Backend / Node.js API</option>
+                    <option value="HTML / CSS / Tailwind Project">HTML / CSS / Tailwind Project</option>
+                    <option value="Internship / Hiring Inquiry">Internship / Hiring Inquiry</option>
+                  </select>
+                </div>
+                <div class="form-group">
+                  <label for="form-budget">Expected Timeline / Scope</label>
+                  <select id="form-budget" name="timeline">
+                    <option value="Immediate (< 1 month)">Immediate (&lt; 1 month)</option>
+                    <option value="1 - 3 months">1 - 3 months</option>
+                    <option value="Full-Time / Permanent">Full-Time / Permanent</option>
+                    <option value="Exploratory discussion">Exploratory discussion</option>
+                  </select>
+                </div>
+              </div>
+
+              <div class="form-group">
+                <label for="form-message">Project Details / Message <span class="required">*</span></label>
+                <textarea id="form-message" name="message" rows="5" placeholder="Tell me about your goals, project vision, or role details..." required></textarea>
+                <span class="field-error" id="message-error"></span>
+              </div>
+
+              <!-- Live Submission Feedback Alert -->
+              <div id="form-status-alert" class="form-status-alert" style="display: none;" role="alert"></div>
+
+              <button type="submit" id="form-submit-btn" class="btn btn-primary btn-block btn-lg">
+                <span class="btn-text">Send Message</span>
+                <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><line x1="22" y1="2" x2="11" y2="13"></line><polygon points="22 2 15 22 11 13 2 9 22 2"></polygon></svg>
+              </button>
+              <p style="font-size: 0.8rem; color: var(--text-muted); text-align: center; margin-top: 0.35rem;">
+                📬 Inquiries are dispatched straight to <strong>vhoramaaz606@gmail.com</strong>
+              </p>
+            </form>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <!-- Project Details Modal Component -->
+  <div id="project-modal" class="modal-overlay" aria-hidden="true" role="dialog" aria-modal="true">
+    <div class="modal-container card-glass">
+      <button class="modal-close-btn" id="modal-close-btn" aria-label="Close project preview">&times;</button>
+      <div class="modal-content" id="modal-content">
+        <!-- Dynamically populated via JS -->
+      </div>
+    </div>
+  </div>
+
+  <!-- Toast Notification System -->
+  <div id="toast-container" class="toast-container" aria-live="polite"></div>
+
+  <!-- Back to top button -->
+  <button id="back-to-top" class="back-to-top-btn" aria-label="Back to top" title="Scroll to top">
+    <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polyline points="18 15 12 9 6 15"></polyline></svg>
+  </button>
+
+  <!-- Professional Site Footer -->
+  <footer class="site-footer">
+    <div class="container footer-container">
+      <div class="footer-brand">
+        <a href="#hero" class="brand-logo">
+          <span class="logo-symbol">&lt;M/&gt;</span>
+          <span class="logo-text">Maaz<span class="accent-text">.dev</span></span>
+        </a>
+        <p class="footer-tagline">
+          Crafting delightful digital experiences, reliable cloud backends, and clean codebases.
+        </p>
+      </div>
+
+      <div class="footer-nav">
+        <h5 class="footer-heading">Navigation</h5>
+        <div class="footer-links">
+          <a href="#hero">Home</a>
+          <a href="#about">About</a>
+          <a href="#skills">Skills</a>
+          <a href="#projects">Projects</a>
+          <a href="#experience">Experience</a>
+          <a href="#contact">Contact</a>
+        </div>
+      </div>
+
+      <div class="footer-socials">
+        <h5 class="footer-heading">Network</h5>
+        <div class="footer-social-links">
+          <a href="https://github.com/maazvhora/maazvhora" target="_blank" rel="noopener noreferrer">GitHub</a>
+          <a href="https://www.linkedin.com/in/maaz-vhora-106925353" target="_blank" rel="noopener noreferrer">LinkedIn</a>
+          <a href="mailto:vhoramaaz606@gmail.com">Direct Email</a>
+        </div>
+      </div>
+    </div>
+
+    <div class="footer-bottom">
+      <div class="container footer-bottom-container">
+        <p class="copyright-text">
+          &copy; <span id="current-year">2026</span> Maaz Vhora. Designed &amp; Engineered with HTML, Vanilla CSS &amp; JavaScript.
+        </p>
+        <p class="footer-badge">⚡ Modern Clean Architecture • 100% Responsive</p>
+      </div>
+    </div>
+  </footer>
+
+  <!-- Main JavaScript Logic -->
+  <script src="js/main.js"></script>
+</body>
+</html>
