@@ -993,18 +993,22 @@ body.cursor-hover .custom-cursor-circle {
   border-radius: 28px;
   -webkit-backface-visibility: hidden;
   backface-visibility: hidden;
-  overflow: hidden;
+  -webkit-transform-style: preserve-3d;
+  transform-style: preserve-3d;
 }
 
 /* --- FRONT FACE: Profile Photo --- */
 .hero-flip-front {
-  transform: rotateY(0deg) translateZ(1px);
+  transform: rotateY(0deg);
+  -webkit-transform: rotateY(0deg);
   padding: 8px;
   background: #E7E1D2;
   border: 1px solid #d4cbb8;
   display: flex;
   align-items: center;
   justify-content: center;
+  overflow: hidden;
+  z-index: 2;
 }
 
 .hero-photo {
@@ -1055,14 +1059,29 @@ body.cursor-hover .custom-cursor-circle {
 
 /* --- BACK FACE: Welcome & Introduction --- */
 .hero-flip-back {
-  transform: rotateY(180deg) translateZ(1px);
+  transform: rotateY(180deg);
+  -webkit-transform: rotateY(180deg);
   padding: 26px 24px;
   background: #ffffff;
-  border: 1px solid #E7E1D2;
-  box-shadow: 0 20px 45px -15px rgba(0, 0, 0, 0.1), 0 0 40px rgba(231, 225, 210, 0.35);
+  border: 1.5px solid #E7E1D2;
+  box-shadow: 0 20px 45px -15px rgba(0, 0, 0, 0.08), 0 0 40px rgba(231, 225, 210, 0.45);
   color: #1c1a17;
   display: flex;
   flex-direction: column;
+  overflow: hidden;
+  z-index: 1;
+}
+
+.hero-flip-card:hover .hero-flip-front,
+.hero-flip-card.is-flipped .hero-flip-front,
+.hero-flip-card:focus-visible .hero-flip-front {
+  z-index: 1;
+}
+
+.hero-flip-card:hover .hero-flip-back,
+.hero-flip-card.is-flipped .hero-flip-back,
+.hero-flip-card:focus-visible .hero-flip-back {
+  z-index: 2;
 }
 
 .flip-back-inner {
@@ -1070,7 +1089,9 @@ body.cursor-hover .custom-cursor-circle {
   flex-direction: column;
   justify-content: space-between;
   height: 100%;
-  gap: 1rem;
+  gap: 0.9rem;
+  position: relative;
+  z-index: 3;
 }
 
 .welcome-badge {
@@ -1085,7 +1106,7 @@ body.cursor-hover .custom-cursor-circle {
   font-weight: 600;
   color: #1c1a17;
   width: fit-content;
-  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.05);
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.04);
 }
 
 .welcome-wave {
@@ -1105,25 +1126,27 @@ body.cursor-hover .custom-cursor-circle {
 }
 
 .flip-back-name {
-  font-family: var(--font-heading);
+  font-family: var(--font-display);
   font-size: 1.6rem;
-  font-weight: 700;
-  color: #ffffff;
-  letter-spacing: -0.01em;
-  margin-bottom: 3px;
+  font-weight: 800;
+  color: #1c1a17;
+  letter-spacing: -0.02em;
+  margin-bottom: 4px;
+  line-height: 1.25;
 }
 
 .flip-back-role {
-  font-size: 0.88rem;
+  font-size: 0.9rem;
   font-weight: 600;
-  color: var(--palette-milk);
-  opacity: 0.9;
+  color: #4a453e;
+  opacity: 1;
+  margin: 0;
 }
 
 .flip-back-bio {
   font-size: 0.92rem;
-  line-height: 1.6;
-  color: rgba(255, 243, 230, 0.9);
+  line-height: 1.65;
+  color: #2d2925;
   margin: 0;
 }
 
@@ -1134,15 +1157,20 @@ body.cursor-hover .custom-cursor-circle {
   margin-top: 6px;
 }
 
+.flip-back-actions .btn {
+  pointer-events: auto;
+  cursor: pointer;
+}
+
 .flip-back-hint {
   display: flex;
   align-items: center;
   justify-content: center;
   gap: 6px;
   font-size: 0.72rem;
-  color: rgba(255, 243, 230, 0.6);
-  padding-top: 6px;
-  border-top: 1px dashed rgba(255, 243, 230, 0.15);
+  color: #787167;
+  padding-top: 8px;
+  border-top: 1px dashed #d4cbb8;
 }
 
 @media (max-width: 480px) {
