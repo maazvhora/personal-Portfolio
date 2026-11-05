@@ -8,31 +8,9 @@ document.addEventListener('DOMContentLoaded', () => {
   'use strict';
 
   /* --------------------------------------------------------------------------
-     1. Theme Switcher (Dark / Light) with LocalStorage
+     1. Clean Theme State (Permanent Clean White & Warm Sand Theme)
      -------------------------------------------------------------------------- */
-  const htmlEl = document.documentElement;
-  const themeToggleBtn = document.getElementById('theme-toggle');
-
-  const getPreferredTheme = () => {
-    const savedTheme = localStorage.getItem('theme');
-    if (savedTheme) return savedTheme;
-    return 'light';
-  };
-
-  const setTheme = (theme) => {
-    htmlEl.setAttribute('data-theme', theme);
-    localStorage.setItem('theme', theme);
-  };
-
-  setTheme(getPreferredTheme());
-
-  if (themeToggleBtn) {
-    themeToggleBtn.addEventListener('click', () => {
-      const currentTheme = htmlEl.getAttribute('data-theme') || 'dark';
-      const newTheme = currentTheme === 'dark' ? 'light' : 'dark';
-      setTheme(newTheme);
-    });
-  }
+  localStorage.removeItem('theme');
 
   /* --------------------------------------------------------------------------
      2. Scroll Progress & Sticky Header
@@ -434,7 +412,7 @@ document.addEventListener('DOMContentLoaded', () => {
         'Corporate service showcase cards highlighting Cloud, AI, and Custom Development',
         'Dynamic client statistics counters and testimonial carousel components',
         'Interactive contact funnel with field validation and conversion triggers',
-        'Glassmorphic dark design system with responsive layouts across all viewports'
+        'Modern glassmorphic editorial design system with responsive layouts across all viewports'
       ],
       tech: ['HTML5', 'CSS3', 'JavaScript', 'Corporate UI', 'Glassmorphism'],
       liveUrl: 'https://github.com/maazvhora/mamotechnolabs',
