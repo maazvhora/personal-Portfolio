@@ -15,14 +15,14 @@
   /* Curated Palette Tokens - Warm Sand (#E7E1D2) & White (#ffffff) */
   --palette-plum: #E7E1D2;
   --palette-plum-deep: #ffffff;
-  --palette-plum-surface: #fbfaf8;
+  --palette-plum-surface: #ffffff;
   --palette-plum-accent: #E7E1D2;
   --palette-plum-light: #E7E1D2;
   --palette-sand: #E7E1D2;
-  --palette-sand-soft: #fbfaf8;
+  --palette-sand-soft: #ffffff;
   --palette-sand-dark: #d4cbb8;
   --palette-milk: #ffffff;
-  --palette-milk-soft: #fbfaf8;
+  --palette-milk-soft: #ffffff;
   --palette-milk-muted: #787167;
   --palette-white: #ffffff;
 
@@ -32,12 +32,12 @@
   --palette-linen: #E7E1D2;
   --palette-slate-ocean: #d4cbb8;
 
-  /* Color Palette - Default Theme (Clean White & Warm Sand #E7E1D2) */
+  /* Color Palette - Default Theme (Clean White #ffffff & Warm Sand #E7E1D2) */
   --bg-primary: #ffffff;
-  --bg-secondary: #fbfaf8;
+  --bg-secondary: #ffffff;
   --bg-surface: #ffffff;
   --bg-card: #ffffff;
-  --bg-card-hover: #fdfcf9;
+  --bg-card-hover: #ffffff;
   
   --border-subtle: #E7E1D2;
   --border-highlight: #d4cbb8;
@@ -60,7 +60,7 @@
 
   /* Gradients */
   --gradient-primary: linear-gradient(135deg, #E7E1D2 0%, #ded6c3 100%);
-  --gradient-secondary: linear-gradient(135deg, #fbfaf8 0%, #E7E1D2 100%);
+  --gradient-secondary: linear-gradient(135deg, #ffffff 0%, #E7E1D2 100%);
   --gradient-hero-title: linear-gradient(135deg, #1c1a17 0%, #3e3831 60%, #635b50 100%);
   --gradient-glow: radial-gradient(circle at 50% 50%, rgba(231, 225, 210, 0.45) 0%, transparent 70%);
   --gradient-card: linear-gradient(180deg, rgba(231, 225, 210, 0.2) 0%, rgba(255, 255, 255, 0) 100%);
@@ -103,11 +103,14 @@ html {
   -moz-osx-font-smoothing: grayscale;
   overflow-x: hidden;
   max-width: 100%;
+  background-color: #ffffff;
+  background: #ffffff;
 }
 
 body {
   font-family: var(--font-sans);
-  background-color: var(--bg-primary);
+  background-color: #ffffff;
+  background: #ffffff;
   color: var(--text-primary);
   line-height: 1.65;
   overflow-x: hidden;
@@ -117,22 +120,9 @@ body {
   position: relative;
 }
 
-/* Atmospheric Ambient Glow (Warm Sand #E7E1D2 & White) */
+/* Atmospheric Ambient Glow (Disabled for clean #ffffff background) */
 body::before {
-  content: '';
-  position: fixed;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 100%;
-  z-index: -2;
-  pointer-events: none;
-  background: 
-    radial-gradient(circle at 10% 12%, rgba(231, 225, 210, 0.45) 0%, transparent 45%),
-    radial-gradient(circle at 90% 88%, rgba(231, 225, 210, 0.35) 0%, transparent 50%),
-    radial-gradient(circle at 82% 16%, rgba(212, 203, 184, 0.3) 0%, transparent 40%),
-    radial-gradient(circle at 18% 84%, rgba(231, 225, 210, 0.35) 0%, transparent 40%);
-  transition: opacity var(--transition-smooth);
+  display: none;
 }
 
 /* Selection */
@@ -2281,7 +2271,7 @@ body.cursor-hover .custom-cursor-circle {
 
 /* Active Focus Badge (Live Focus / Pursuit Indicator) */
 .timeline-badge-active {
-  background: #fbfaf8;
+  background: #ffffff;
   border: 1px solid #10b981;
   color: #065f46;
   font-weight: 700;
@@ -3221,37 +3211,7 @@ body.cursor-hover .custom-cursor-circle {
    18. Extra Layout & Aesthetics Polish: Ambient Glows, Mockups & Cards
    -------------------------------------------------------------------------- */
 .ambient-glow {
-  position: absolute;
-  border-radius: 50%;
-  filter: blur(120px);
-  pointer-events: none;
-  z-index: 0;
-  opacity: 0.55;
-  transition: opacity 0.5s ease;
-}
-
-.ambient-glow-1 {
-  width: 550px;
-  height: 550px;
-  top: -100px;
-  left: -100px;
-  background: radial-gradient(circle, rgba(231, 225, 210, 0.5) 0%, rgba(231, 225, 210, 0.2) 60%, transparent 80%);
-}
-
-.ambient-glow-2 {
-  width: 600px;
-  height: 600px;
-  top: 300px;
-  right: -150px;
-  background: radial-gradient(circle, rgba(231, 225, 210, 0.4) 0%, rgba(212, 203, 184, 0.25) 50%, transparent 80%);
-}
-
-.ambient-glow-1 {
-  background: radial-gradient(circle, rgba(231, 225, 210, 0.4) 0%, transparent 70%);
-}
-
-.ambient-glow-2 {
-  background: radial-gradient(circle, rgba(231, 225, 210, 0.35) 0%, transparent 70%);
+  display: none;
 }
 
 /* Hero Connect Row */
@@ -3336,11 +3296,6 @@ body.cursor-hover .custom-cursor-circle {
   overflow: hidden;
   text-overflow: ellipsis;
   white-space: nowrap;
-}
-
-.browser-url-pill {
-  background: #E7E1D2;
-  color: #4a453e;
 }
 
 .browser-badge {
