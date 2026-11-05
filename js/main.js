@@ -248,7 +248,7 @@ document.addEventListener('DOMContentLoaded', () => {
     whoami: 'Maaz Vhora | Assistant Full-Stack Engineer &amp; UI Architect based in Vadodara, Gujarat.',
     about: 'Computer Science &amp; Engineering student at ITM (sls) Baroda University with a passion for web development and clean code.',
     skills: 'Core Stack: HTML5, CSS3, Tailwind CSS, JavaScript, React, Node.js, MongoDB, Git &amp; GitHub.',
-    projects: '<div style="line-height:1.6;"><span style="color:#fff3e6;font-weight:700;">📂 Public GitHub Projects (maazvhora):</span><br>[1] <span style="color:#ffffff;font-weight:600;">Apple Official Store Clone</span> — Pixel-perfect UI showcase<br>&nbsp;&nbsp;&nbsp;&nbsp;🔗 Demo: <a href="https://apple-clone-weld-zeta.vercel.app" target="_blank" style="color:#fff3e6;text-decoration:underline;">apple-clone-weld-zeta.vercel.app</a> | 🐙 <a href="https://github.com/maazvhora/appleClone" target="_blank" style="color:#b86299;text-decoration:underline;">GitHub</a><br>[2] <span style="color:#ffffff;font-weight:600;">Spider-Man Interactive Web Experience</span> — Real-time web physics &amp; canvas<br>&nbsp;&nbsp;&nbsp;&nbsp;🔗 Demo: <a href="https://spider-man-portfolio-rww2.vercel.app" target="_blank" style="color:#fff3e6;text-decoration:underline;">spider-man-portfolio-rww2.vercel.app</a> | 🐙 <a href="https://github.com/maazvhora/spider-man-portfolio" target="_blank" style="color:#b86299;text-decoration:underline;">GitHub</a><br>[3] <span style="color:#ffffff;font-weight:600;">Mamo TechnoLabs Digital Agency Portal</span> — Corporate IT agency showcase<br>&nbsp;&nbsp;&nbsp;&nbsp;🐙 <a href="https://github.com/maazvhora/mamotechnolabs" target="_blank" style="color:#b86299;text-decoration:underline;">github.com/maazvhora/mamotechnolabs</a><br>[4] <span style="color:#ffffff;font-weight:600;">Textify Live Text Processing Tool</span> — Instant string analysis &amp; formatting<br>&nbsp;&nbsp;&nbsp;&nbsp;🐙 <a href="https://github.com/maazvhora/Text" target="_blank" style="color:#b86299;text-decoration:underline;">github.com/maazvhora/Text</a></div>',
+    projects: '<div style="line-height:1.6;"><span style="color:#fff3e6;font-weight:700;">📂 Public GitHub Projects (maazvhora):</span><br>[1] <span style="color:#ffffff;font-weight:600;">Apple Official Store Clone</span> — Pixel-perfect UI showcase<br>&nbsp;&nbsp;&nbsp;&nbsp;🔗 Demo: <a href="https://apple-clone-weld-zeta.vercel.app" target="_blank" style="color:#fff3e6;text-decoration:underline;">apple-clone-weld-zeta.vercel.app</a> | 🐙 <a href="https://github.com/maazvhora/appleClone" target="_blank" style="color:#b86299;text-decoration:underline;">GitHub</a><br>[2] <span style="color:#ffffff;font-weight:600;">Spider-Man Interactive Web Experience</span> — Real-time web physics &amp; canvas<br>&nbsp;&nbsp;&nbsp;&nbsp;🔗 Demo: <a href="https://spider-man-portfolio-rww2.vercel.app" target="_blank" style="color:#fff3e6;text-decoration:underline;">spider-man-portfolio-rww2.vercel.app</a> | 🐙 <a href="https://github.com/maazvhora/spider-man-portfolio" target="_blank" style="color:#b86299;text-decoration:underline;">GitHub</a><br>[3] <span style="color:#ffffff;font-weight:600;">Mamo TechnoLabs Digital Agency Portal</span> — Corporate IT agency showcase<br>&nbsp;&nbsp;&nbsp;&nbsp;🐙 <a href="https://github.com/maazvhora/mamotechnolabs" target="_blank" style="color:#b86299;text-decoration:underline;">github.com/maazvhora/mamotechnolabs</a><br>[4] <span style="color:#ffffff;font-weight:600;">Textify Live Text Processing Tool</span> — Instant string analysis &amp; formatting<br>&nbsp;&nbsp;&nbsp;&nbsp;🐙 <a href="https://github.com/maazvhora/Text" target="_blank" style="color:#b86299;text-decoration:underline;">github.com/maazvhora/Text</a><br>[5] <span style="color:#ffffff;font-weight:600;">Snip URL Shortener &amp; API</span> — Full-stack Express &amp; MongoDB link redirection<br>&nbsp;&nbsp;&nbsp;&nbsp;🐙 <a href="https://github.com/maazvhora/shortUrl" target="_blank" style="color:#b86299;text-decoration:underline;">github.com/maazvhora/shortUrl</a></div>',
     contact: 'Email: vhoramaaz606@gmail.com | Phone: +91 7041493457 | LinkedIn: https://www.linkedin.com/in/maaz-vhora-106925353 | GitHub: https://github.com/maazvhora',
     resume: 'Maaz Vhora Resume: <a href="assets/resume.pdf" target="_blank" style="color:#fff3e6;text-decoration:underline;font-weight:600;">[View PDF]</a> | <a href="assets/Maaz_Vhora_Resume.pdf" download="Maaz_Vhora_Resume.pdf" style="color:#fff3e6;text-decoration:underline;font-weight:600;">[Download PDF]</a>',
     date: () => new Date().toLocaleString('en-US', { timeZone: 'Asia/Kolkata', dateStyle: 'full', timeStyle: 'medium' }) + ' (IST)',
@@ -456,6 +456,23 @@ document.addEventListener('DOMContentLoaded', () => {
       tech: ['JavaScript', 'HTML5', 'CSS3', 'DOM API', 'Text Utilities'],
       liveUrl: 'https://github.com/maazvhora/Text',
       githubUrl: 'https://github.com/maazvhora/Text'
+    },
+    p5: {
+      title: 'Snip — Modern URL Shortener & API',
+      image: 'assets/images/project-shorturl.jpg',
+      category: 'Full-Stack & Backend Tool',
+      year: '2024',
+      overview:
+        'A full-stack URL-shortening web application and REST API built with Node.js, Express, EJS, and MongoDB. Converts long, cumbersome links into clean, shareable short URLs with lightning-fast redirection, click routing, and persistent cloud storage.',
+      features: [
+        'Instant URL hashing and unique short-ID generation using NanoID & ShortID algorithms',
+        'High-speed redirect routing engine backed by MongoDB connection pooling',
+        'RESTful API endpoints for programmatic link creation and retrieval',
+        'Clean, accessible responsive UI built with semantic EJS views and modern CSS'
+      ],
+      tech: ['Node.js', 'Express.js', 'MongoDB', 'Mongoose', 'EJS', 'REST API'],
+      liveUrl: 'https://github.com/maazvhora/shortUrl',
+      githubUrl: 'https://github.com/maazvhora/shortUrl'
     }
   };
 
